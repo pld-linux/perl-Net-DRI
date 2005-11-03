@@ -6,6 +6,7 @@
 %define		pdir	Net
 %define		pnam	DRI
 Summary:	Net::DRI - Domain Name Registry Interface
+Summary(pl):	Net::DRI - interfejs do Domain Name Registry
 Name:		perl-Net-DRI
 Version:	0.17
 Release:	0.1
@@ -31,6 +32,17 @@ various registries, or by a reseller that needs to connect with its
 registrar, or by an end client that needs to connect with its
 provider, be it a registrar or not, without being forced to use the
 specific interface available from the provider!
+
+%description -l pl
+Net::DRI to zbiór obiektowo zorientowanych modu³ów Perla
+udostêpniaj±cych abstrakcyjny i jednolity interfejs do ³±czenia siê z
+dostawcami nazw domen - rejestrami (registries), prowadz±cymi rejestry
+(registrars) lub jednostkami na innym poziomie. W ten sposób Net::DRI
+mo¿e byæ u¿ywany przez prowadz±cego rejestr do nawi±zywania po³±czeñ z
+ró¿nymi rejestrami lub przez sprzedawcê potrzebuj±cego po³±czyæ siê z
+prowadz±cym jego rejestr, lub przez klienta potrzebuj±cego po³±czyæ
+siê ze swoim dostawc± - który mo¿e byæ prowadz±cym rejestr lub nie -
+bez potrzeby u¿ywania konkretnego interfejsu dostêpnego u dostawcy.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
