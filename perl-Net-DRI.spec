@@ -18,7 +18,12 @@ URL:		http://www.dotandco.com/services/software/Net-DRI/index.en.xhtml
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-# FIXME
+BuildRequires:	perl-DateTime
+BuildRequires:	perl-DateTime-Format-Strptime
+BuildRequires:	perl-DateTime-TimeZone
+BuildRequires:	perl-SOAP-Lite
+BuildRequires:	perl-WWW-Mechanize
+BuildRequires:	perl-XML-LibXML
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
