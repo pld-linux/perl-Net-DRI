@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	DRI
 Summary:	Net::DRI - Domain Name Registry Interface
-Summary(pl.UTF-8):   Net::DRI - interfejs do Domain Name Registry
+Summary(pl.UTF-8):	Net::DRI - interfejs do Domain Name Registry
 Name:		perl-Net-DRI
 Version:	0.17
 Release:	0.1
