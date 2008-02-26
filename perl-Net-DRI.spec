@@ -8,12 +8,12 @@
 Summary:	Net::DRI - Domain Name Registry Interface
 Summary(pl.UTF-8):	Net::DRI - interfejs do Domain Name Registry
 Name:		perl-Net-DRI
-Version:	0.17
+Version:	0.85
 Release:	0.1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	70bc62448ad31c0a6b23c4f4690dfa76
+# Source0-md5:	929e593473427c3790129b44ae6ef089
 URL:		http://www.dotandco.com/services/software/Net-DRI/index.en.xhtml
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
