@@ -9,7 +9,7 @@ Summary:	Net::DRI - Domain Name Registry Interface
 Summary(pl.UTF-8):	Net::DRI - interfejs do Domain Name Registry
 Name:		perl-Net-DRI
 Version:	0.85
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -18,10 +18,16 @@ URL:		http://www.dotandco.com/services/software/Net-DRI/index.en.xhtml
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl-Class-Accessor-Chained
 BuildRequires:	perl-DateTime
+BuildRequires:	perl-DateTime-Format-ISO8601
 BuildRequires:	perl-DateTime-Format-Strptime
 BuildRequires:	perl-DateTime-TimeZone
+BuildRequires:	perl-Email-Valid
+BuildRequires:	perl-IO-Socket-SSL
+BuildRequires:	perl-MIME-tools
 BuildRequires:	perl-SOAP-Lite
+BuildRequires:	perl-Test-LongString
 BuildRequires:	perl-WWW-Mechanize
 BuildRequires:	perl-XML-LibXML
 %endif
