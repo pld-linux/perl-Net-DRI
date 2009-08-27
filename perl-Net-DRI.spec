@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests 		# do not perform "make test"
+%bcond_without	tests		# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Net
@@ -8,27 +8,25 @@
 Summary:	Net::DRI - Domain Name Registry Interface
 Summary(pl.UTF-8):	Net::DRI - interfejs do Domain Name Registry
 Name:		perl-Net-DRI
-Version:	0.85
+Version:	0.95
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	929e593473427c3790129b44ae6ef089
+# Source0-md5:	11690b74f3be516d43bfc6fca761f0b1
 URL:		http://www.dotandco.com/services/software/Net-DRI/index.en.xhtml
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl(UNIVERSAL::require)
+BuildRequires:	perl-Class-Accessor
 BuildRequires:	perl-Class-Accessor-Chained
 BuildRequires:	perl-DateTime
-BuildRequires:	perl-DateTime-Format-ISO8601
+BuildRequires:	perl-DateTime-Format-ISO8601 >= 0.06
 BuildRequires:	perl-DateTime-Format-Strptime
 BuildRequires:	perl-DateTime-TimeZone
 BuildRequires:	perl-Email-Valid
-BuildRequires:	perl-IO-Socket-SSL
-BuildRequires:	perl-MIME-tools
-BuildRequires:	perl-SOAP-Lite
-BuildRequires:	perl-Test-LongString
-BuildRequires:	perl-WWW-Mechanize
+BuildRequires:	perl-IO-Socket-SSL >= 0.90
 BuildRequires:	perl-XML-LibXML
 %endif
 BuildArch:	noarch
@@ -79,7 +77,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README SUPPORT TODO
+%doc Changes README TODO
 %{perl_vendorlib}/Net/DRI.pm
 %{perl_vendorlib}/Net/DRI
 %{_mandir}/man3/*
